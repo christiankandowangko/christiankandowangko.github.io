@@ -1,0 +1,337 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+header {
+	background-color: #ffffff;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+header h1 {
+	color: #000000;
+	display: inline-block;
+	font-size: 36px;
+	font-weight: 700;
+	margin-right: 50px;
+}
+
+nav {
+	display: inline-block;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li a {
+	color: #000000;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 500;
+	margin-right: 20px;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: #e91e63;
+}
+
+
+main {
+	padding: 50px;
+}
+
+.hero {
+	background-image:url(img/kako\ laundry.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #ffffff;
+	padding: 150px 0;
+	text-align: center;
+}
+
+.hero h2 {
+	font-size: 60px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+.hero p {
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 50px;
+}
+
+.hero button {
+	background-color: #e91e63;
+	border: none;
+	border-radius: 5px;
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 20px 50px;
+	transition: background-color 0.2s ease;
+}
+
+.hero button:hover {
+	background-color: #d81c60;
+}
+
+.services {
+	margin-top: 100px;
+	text-align: center;
+}
+
+.services h2 {
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+.services ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0;
+}
+
+.services li {
+	background-color: #f2f2f2;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	flex: 1;
+	margin: 20px;
+	padding: 50px;
+	text-align: center;
+}
+
+.services li i {
+	color: #e91e63;
+	font-size: 60px;
+	margin-bottom: 20px;
+}
+
+.services li span {
+	color: #000000;
+	display: block;
+	font-size: 24px;
+	font-weight: 500;
+	margin-top: 20px;
+}
+
+.pricing {
+	margin-top: 100px;
+	text-align: center;
+}
+
+.pricing h2 {
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+table {
+	border-collapse: collapse;
+	margin: 0 auto;
+	max-width: 1200px;
+	text-align: left;
+}
+
+table th,
+table td {
+	border: 1px solid #cccccc;
+	padding: 20px;
+}
+
+table th {
+	background-color: #f2f2f2;
+	font-size: 24px;
+	font-weight: 500;
+	padding: 20px;
+}
+
+table td {
+	font-size: 18px;
+	font-weight: 500;
+	padding: 20px;
+}
+
+table td:first-child {
+	font-weight: 700;
+}
+
+table tr:nth-child(even) {
+	background-color: #f9f9f9;
+}
+
+table tr:hover {
+	background-color: #e9e9e9;
+}
+
+.cta {
+	background-color: #e91e63;
+	color: #ffffff;
+	padding: 100px 0;
+	text-align: center;
+}
+
+.cta h2 {
+	font-size: 60px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+.cta p {
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 50px;
+}
+
+.cta button {
+	background-color: #ffffff;
+	border: none;
+	border-radius: 5px;
+	color: #e91e63;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 20px 50px;
+	transition: background-color 0.2s ease;
+}
+
+.cta button:hover {
+	background-color: #f2f2f2;
+}
+
+section {
+	margin-top: 50px;
+	padding: 20px;
+	background-color: #f1f1f1;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px #dcdcdc;
+}
+
+h2 {
+	margin-top: 0;
+}
+
+p {
+	margin: 10px 0;
+}
+
+a {
+	color: #0077b6;
+	text-decoration: none;
+}
+
+footer {
+	background-color: #e9e9e9;
+	padding: 50px;
+	text-align: center;
+}
+
+footer p {
+	color: #9b9b9b;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+footer a {
+	color: #000000;
+	text-decoration: none;
+}
+
+@media (max-width: 768px) {
+	header h1 {
+		font-size: 24px;
+		margin-right: 20px;
+	}
+
+	nav ul li a {
+		font-size: 16px;
+		margin-right: 10px;
+	}
+
+	main {
+		padding: 20px;
+	}
+
+	.hero {
+		padding: 100px 0;
+	}
+
+	.hero h2 {
+		font-size: 36px;
+		margin-bottom: 20px;
+	}
+
+	.hero p {
+		font-size: 18px;
+		margin-bottom: 30px;
+	}
+
+	.hero button {
+		font-size: 16px;
+		padding: 15px 30px;
+	}
+
+	.services li {
+		margin: 10px;
+		padding: 30px;
+	}
+
+	.services li span {
+		font-size: 20px;
+		margin-top: 10px;
+	}
+
+	.pricing h2 {
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+
+	table th,
+	table td {
+		font-size: 16px;
+		padding: 15px;
+	}
+
+	.cta h2 {
+		font-size: 48px;
+		margin-bottom: 20px;
+	}
+
+	.cta p {
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+
+	.cta button {
+		font-size: 16px;
+		padding: 15px 30px;
+	}
+
+	footer p {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+}
